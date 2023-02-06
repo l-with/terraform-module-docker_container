@@ -24,6 +24,7 @@ No modules.
 
 | Name | Type |
 |------|------|
+| [system_command.docker_check_running](https://registry.terraform.io/providers/neuspaces/system/latest/docs/data-sources/command) | data source |
 | [system_command.docker_run](https://registry.terraform.io/providers/neuspaces/system/latest/docs/data-sources/command) | data source |
 
 ## Inputs
