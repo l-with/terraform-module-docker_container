@@ -14,6 +14,10 @@ data "system_command" "docker_check_running" {
   expect {
     stdout = true
   }
+  expect {
+    stdout    = true
+    exit_code = 1
+  }
 }
 
 locals {
