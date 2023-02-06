@@ -1,5 +1,6 @@
 locals {
   args = [
+    "--detach",
     "--publish ${var.publish}",
     "--restart ${var.restart_policy}",
     "--name ${var.name}",
