@@ -10,13 +10,9 @@ locals {
 }
 
 data "system_command" "docker_check_running" {
-  command = "docker ps | rev | cut -d ' ' -f1 | rev | grep ${var.name}"
+  command = "docker ps | rev | cut -d ' ' -f1 | rev | grep ${var.name} | cat"
   expect {
     stdout = true
-  }
-  expect {
-    stdout    = true
-    exit_code = 1
   }
 }
 
